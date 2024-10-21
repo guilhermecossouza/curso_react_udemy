@@ -1,0 +1,38 @@
+AULAS DE 01 Á 34 COMPONENTES
+
+const BemVindo = () => <h2>Bem vindo ao sistema.</h2>
+const UserCreateSystem = () => <p>Criado por Guilherme Costa</p>
+const MaisComponentes = () => {
+  return(
+    <div>
+      <h2>Componente 1</h2>
+      <h2>Componente 2</h2>
+    </div>
+  )
+}
+
+const ComponentProps = (props) => {
+  return(
+    <div>
+      <h2>Seu nome é {props.name}, e sua data de aniversário é {props["data-nascimento"]}, e seu ID é {props["id-user"]} </h2>
+    </div>
+  )
+}
+
+export default function App() {
+  return(
+    <div>
+      <h1>Bem vindo ao sistema.</h1>
+      <h2>@guilhermecosta</h2>
+
+      <BemVindo />
+
+      <UserCreateSystem />
+      <MaisComponentes />
+
+      <ComponentProps name="Zaca" data-nascimento="28/02/1984" id-user="1"/>
+      <ComponentProps name="Guilherme" data-nascimento="28/02/1984" id-user="2"/>
+    </div>
+  )
+}
+================================================
