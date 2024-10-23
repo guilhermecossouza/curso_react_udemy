@@ -1,15 +1,13 @@
 
-import React, {Component} from 'react'
-import Lista from './aulas/secao_5_aprendendo_mais_react/aula_45_Trabalhando_Listas';
+import React from 'react'
+import Tarefas from './aulas/secao_6_Usando_hooks/aula_53_useCallback'
 
-class App extends Component {
-  render() {
-    return(
-      <div>
-        <Lista />
-      </div>
-    );
-  }
+
+function App () {
+  return(
+    <div>
+      <Tarefas />
+    </div>
+  );
 }
-
 export default App;
