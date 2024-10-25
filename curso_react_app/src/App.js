@@ -1,13 +1,8 @@
 
-import React from 'react'
-import Tarefas from './aulas/secao_6_Usando_hooks/aula_53_useCallback'
-
-
+import RoutesApp from './routes';
 function App () {
   return(
-    <div>
-      <Tarefas />
-    </div>
+    <RoutesApp />
   );
 }
 export default App;
