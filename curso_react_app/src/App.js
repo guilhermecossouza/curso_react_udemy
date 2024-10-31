@@ -1,8 +1,11 @@
+import RoutesApp from "./routes"
 
-import RoutesApp from './routes';
-function App () {
+import "./index.css"
+
+export default function App () {
   return(
-    <RoutesApp />
+    <div className="container-fluid">
+      <RoutesApp />
+    </div>
   );
 }
-export default App;

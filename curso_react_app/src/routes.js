@@ -1,19 +1,17 @@
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
-import Header from "./aulas/secao_7_react_avancado/componentes/Header";
-import Home from "./aulas/secao_7_react_avancado/pages/Home";
-import Sobre from "./aulas/secao_7_react_avancado/pages/Sobre";
-import Contato from "./aulas/secao_7_react_avancado/pages/Contato";
-function RoutesApp() {
-    return (
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+
+import Header from "./aulas/secao_8_projeto_filmes/pages/Header"
+import Home from './aulas/secao_8_projeto_filmes/pages/Home';
+import Filme from './aulas/secao_8_projeto_filmes/pages/Filme';
+
+export default function RoutesApp () {
+    return(
         <Router>
             <Header />
             <Routes>
-                <Route path="/" element={<Home />}/> 
-                <Route path="/sobre" element={<Sobre /> } />
-                <Route path="/contato" element={<Contato /> } />
+                <Route path='/' element={<Home />} />
+                <Route path='/filme/:id' element={<Filme />} />
             </Routes>
         </Router>
-    );
+    )
 }
-
-export default RoutesApp;

@@ -1,10 +1,8 @@
-import { Link } from "react-router-dom";
 
 function Sobre () {
   return(
     <div>
-      <h1>Bem vindo(a) a página Sobre a Empresa</h1>
-      <Link to="/">Home</Link>
+      <h1>Pagina Sobre</h1>
     </div>
   );
 }
